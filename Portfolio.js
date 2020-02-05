@@ -1,6 +1,6 @@
 function sideNav() {
 	document.getElementById("dropbtnmd").style.opacity = "0";
-	document.getElementById("sidenav").style.left = "-15px";
+	document.getElementById("sidenav").style.left = "0px";
 	//document.getElementById("sidenav").style.height = "105vh";
 };
 
