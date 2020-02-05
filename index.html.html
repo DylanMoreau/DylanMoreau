@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Dylan Moreau</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+		<!-- crossorigin="anonymous" for script below Bootstrap-->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" SameSite="None">
+		<link rel="stylesheet" type="text/css" href=".\portfolio.css">
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/502b41f276.js" SameSite="None" ></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css"
+		 SameSite="None">
+		<!-- Javascript -->
+		<script type="text/javascript" src="./portfolio.js"></script>
+
+		<!-- Animation on Scroll CDN -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
+
+	<body onscroll="scrollFunction()" >
+		<div class="container-fluid" id="container-div">
+			<div class="row" id="home-background">
+
+		<!-- dropdown menu -->
+
+				<div class="col col-12 dropdown">
+					<!-- Mobile -->
+
+					<button onclick="openNav()" class="dropbtn fixed-top d-inline d-sm-inline d-md-none" id="dropbtn"><i class="fas fa-align-justify fa-2x"></i></button>
+
+					<!-- Desktop and Tablets -->
+					<button onclick="sideNav()" class="dropbtn fixed-top d-none d-sm-none d-md-block" id="dropbtnmd"><i class="fas fa-align-justify fa-3x"></i></button>
+
+					<div id="mydropdown" class="dropdown-content 
+						text-center fixed-top">
+						<a href="#home-background" class="col col-4 outline"> Home </a>
+						<!--<a href="#Technologies" class="col col-3"> Technologies</a>-->
+						<a href="#projects" class="col col-4 outline"> Projects </a>
+						<a href="#about" class="col col-4 outline"> About </a>
+						<button id="caret-div" class="col col-12" onclick="closeNav()">
+							<strong><i id="caret" class="fas fa-angle-double-down"> </i></strong>
+						</button>
+					</div>
+
+					<div class="d-none d-sm-none d-md-block col-md-2" id="sidenav">
+						<p id="close-side-nav" onclick="closeSideNav()"> &times </p>
+
+						<div id="mysidenav" class="sidenav-content offset-md-1 col-md-10">
+							<h3><a href="#home-background" class="col col-md-12"> Home</a></h3>
+						
+							<h3><a href="#projects" class="col col-md-12"> Projects </a></h3>
+							
+							<h3><a href="#about" class="col col-md-12"> About </a></h3>
+						</div>
+					</div>
+					
+				</div>
+					<!-- Desktop and Tablets -->
+	
+			<!-- Home -->
+				
+			<div class="col col-12 text-center" id="me">
+				<div id="name">
+					<!-- for mobile -->
+					<div>
+						<h2 class="d-block d-sm-block d-md-none">Dylan Moreau</h2>
+						<h6 class="d-block d-sm-block d-md-none">Full-Stack Developer</h6>
+					</div>
+
+					<!-- Desktop and Tablets -->
+					<div>
+						<h1 class="d-none d-sm-none d-md-block"> Dylan Moreau</h1>
+						<h5 class="d-none d-sm-none d-md-block">Full-Stack Developer</h5>
+					</div>
+				</div>
+
+					
+				<div class="d-none d-sm-none d-md-inline col-md-12">
+					<div class="row">
+						<i class="offset-md-2 col-md-2 icon-html5-alt fa-6x"></i>
+
+						<i class="col-md-2 icon-css3-alt fa-6x"></i>
+
+						<i class="col-md-2 icon-javascript-alt fa-6x"></i>
+
+						<i class="col-md-2 icon-ruby fa-6x align-top"></i>
+					</div>
+
+					<div class="row">
+						<i class="offset-md-3 col-md-2 icon-ruby-on-rails fa-6x"></i>
+
+						<i class="col-md-2 icon-postgres fa-6x"></i>
+
+						<i class="col-md-2 icon-heroku fa-6x"></i>
+					</div>	
+				</div>
+
+			</div>
+			
+				
+					
+			   <div class="col col-12">
+				<a id="unsplash-tag" style="background: gray; color:white;text-decoration:none; padding:4px 6px; font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif; font-size:10px; font-weight:bold; line-height:1.2; display:inline-block;border-radius:3px" 
+					href="
+						https://unsplash.com/@stevendiazphoto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+					target="_blank" 
+					rel="noopener noreferrer" 
+					title="Download free do whatever you want high-resolution photos from Steven Diaz">
+					 <span style="display:inline-block;padding:2px 3px">
+					 	<svg xmlns="http://www.w3.org/2000/svg" 
+					 		style="height:10px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" 
+					 		viewBox="0 0 32 32">
+					 		<title>unsplash-logo</title>
+					 		<path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+					 	</svg>
+					 </span>
+					 <span style="display:inline-block;padding:2px 3px">Steven Diaz
+					 </span>  
+				</a>
+			   </div>
+			</div>
+
+			<!-- Tachnologies List on Mobile -->
+
+			<div class="row" id="Technologies">
+				<div class="col-12 d-md-none text-center">
+					<p id="project-title" data-aos="zoom-in" data-aos-duration="750">Technologies</p>
+				</div>
+
+				<div class="offset-2 col-10 d-md-none">
+					<div class="row">
+						<i class="col-6 icon-html5-alt fa-4x" data-aos="flip-right" data-aos-duration="1000"></i>
+
+						<i class="col-6 icon-css3-alt fa-4x" data-aos="flip-left" data-aos-duration="1000"></i>
+					</div>
+
+					<div class="row">
+						<i class="col-6 icon-javascript-alt fa-4x" data-aos="flip-right" data-aos-duration="1000"></i>
+
+						<i class="col-6 icon-ruby fa-4x"data-aos="flip-left" data-aos-duration="1000"></i>
+					</div>
+
+					<div class="row">
+						<i class="col-6 icon-ruby-on-rails fa-4x" data-aos="flip-right" data-aos-duration="1000"></i>
+
+						<i class="col-6 icon-postgres fa-4x" data-aos="flip-left" data-aos-duration="1000"></i>
+					</div>	
+
+					<div class="row">
+						<i class="offset-2 col-7 text-center icon-heroku fa-4x" data-aos="zoom-in" data-aos-duration="1000"></i>
+					</div>
+				</div>
+			</div>
+
+				<!-- Projects -->
+		
+			<div class="row" id="projects">
+
+				<div class="col-12 text-center">
+					<p id="project-title" data-aos="zoom-in" data-aos-duration="750"> Projects </p>
+				</div>		
+
+	
+					<div class="offset-1 col-10 offset-md-2 col-md-3 project-div" id="project-div1" onmouseover="mouseover1()" onmouseout="mouseout1()" data-aos="zoom-in" data-aos-duration="750">
+						<a href="https://dylanmoreau.github.io/mydcuniverse">
+							<div id="project-pic1"><img src="C:\Users\Dylan Moreau\Pictures\Batman.png" width="100%" height="200px;"></div>
+							<h4 id="project-1">My DCUniverse</h4>
+						</a>
+
+						<div class="" id="info-card1">
+							<h3 class="text-center col-12" id="project-id"> My DCUniverse </h3>
+
+							<div class="col-12 offset-md-1 col-md-10">
+								<h4>About: </h4>
+									<p>
+										My DCUniverse is a fun front-end design project inspired by my love and interest in comic related material. The site acts as a high-tech store selling the same equipment famous heroes use.
+									</p>
+								<h4>Technologies:</h4>
+									<p>
+										HTML, CSS
+									</p>
+							</div>
+						</div>
+					</div>  
+				
+
+				
+					<div class="offset-1 col-10 offset-md-2 col-md-3 project-div" id="project-div2" onmouseover="mouseover2()" onmouseout="mouseout2()" data-aos="zoom-in" data-aos-duration="750">
+						<a href="http://findfit-programs.herokuapp.com">
+							<div id="project-pic2"><img src="C:\Users\Dylan Moreau\Downloads\FireShot\FireShot Capture 022.jpg" width="100%" height="200px"> </div>
+							<h4 id="project-2"> FindFit</h4>
+						</a>
+
+						<div class="" id="info-card2">
+							<h3 class="text-center" id="project-id2"> FindFit Programs</h3>
+
+							<div class="col-12  offset-md-1 col-md-10">
+								<h4>About:</h4>
+								<p>
+									<B>*Still in Early Developement*</B></br>
+									FindFit Programs is a web app that allows fitness trainers to upload and sell their programs online to those looking to get into the best shape of their life.
+								</p>
+
+								<h4>Technologies:</h4>
+								<p>
+									Ruby on Rails, Ruby, HTML, CSS, JS, PSQL
+								</p>
+							</div>
+								
+						</div>
+					</div>
+			</div>
+
+
+			<!--    ABOUT    -->
+
+
+			<div class="row" id="about">
+				<div class="col-12 text-center">
+					<p id="about-title" data-aos="zoom-in" data-aos-duration="750"> About Me</p>
+				</div>
+
+				<div class="offset-1 col-10 offset-md-4 col-md-4">
+					<h3> Intro & Goals: </h3>
+						<p class="about-me">
+							My name is Bruce Way...Dylan Moreau and I AM BATMA...a full-stack developer. My main goal in web developement is to contribute in making helpful products. I love meeting new people, and would prefer to work with others in a group.
+						</p>
+
+					<h3>Hobbies:</h3>
+						<p class="about-me"> 
+							When I am not coding I enjoy training in the gym, reading, and woodworking.
+						</p>
+
+					<h3>Interests:</h3>
+						<p class="about-me">
+							My interests include science, technology, comics, movies, and anything video game related.
+						</p>
+
+					<h3>Socials: </h3>
+						<p class="col-12"><strong>Contact Me:</strong> Dyl.zm.95@gmail.com</p>
+
+						<a id="github" href="https://github.com/DylanMoreau" class="offset-1 col-3">
+							<i style="color: black;" class="fab fa-github fa-3x"></i>
+						</a>
+
+						<a href="https://www.linkedin.com/in/dylan-moreau-8937411a1/" class="offset-3 col-4">
+							<i class="fab fa-linkedin fa-3x" style="color: black;"></i>
+						</a>
+				</div>
+			</div>
+
+			<footer class="row text-center">
+				
+				 <h4 class="col-12 d-none d-sm-none d-md-block">“Education never ends. It is a series of lessons, with the greatest for the last.” </br> -- Sherlock Holmes</h4>
+
+				 <h6 class="col-12 d-block d-sm-block d-md-none">“Education never ends. It is a series of lessons, with the greatest for the last.” </br> -- Sherlock Holmes</h6>
+
+			</footer>
+		</div>
+
+		<script> AOS.init();</script>
+	</body>
+</html>
