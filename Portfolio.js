@@ -6,7 +6,7 @@ function sideNav() {
 
 function closeSideNav() {
 	document.getElementById("dropbtnmd").style.opacity = "1";
-	document.getElementById("sidenav").style.left = "-275px";
+	document.getElementById("sidenav").style.left = "-285px";
 };
 
 function openNav() {

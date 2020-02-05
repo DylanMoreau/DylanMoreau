@@ -31,7 +31,7 @@ body {
 	position: fixed;
 	height: 100vh;
 	top: 0px;
-	left: -275px;
+	left: -285px;
 	background: rgba(235, 235, 235, .4);
 	transition: 1.5s;
 	z-index: 100000;
