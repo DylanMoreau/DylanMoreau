@@ -49,6 +49,16 @@ function mouseout2() {
 	document.getElementById("info-card2").style.opacity = "0";
 };
 
+function mouseover3() {
+	document.querySelector("#info-card3").style.height = "305px";
+	document.querySelector("#info-card3").style.opacity = "1";
+}
+
+function mouseout3() {
+	document.querySelector("#info-card3").style.height = "0";
+	document.querySelector("#info-card3").style.opacity = "0";
+}
+
 
 function scrollFunction() {
 	let homeHeight = document.getElementById("home-background").offsetHeight;

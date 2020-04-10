@@ -183,6 +183,14 @@ button:focus {
 	color: gray;
 }
 
+#project-3 {
+	position: absolute;
+	transform: rotate(-90deg);
+	color: gray;
+	top: 80px;
+	right: -5px;
+}
+
 #project-pic1 img{
 	width: 100%;
 }
@@ -190,6 +198,11 @@ button:focus {
 
 #project-pic2 img{
 	width: 100%; 
+}
+
+#project-pic3 img{
+	width: 100%;
+	height: 200px;
 }
 
 #info-card1 {
@@ -216,6 +229,17 @@ button:focus {
 	overflow-y: scroll;	         
 	/*position: relative;
 	left: -15px;*/
+}
+
+#info-card3 {
+	background: darkgray;
+	color: white;
+	width: 100%;
+	height: 305px;
+	border-bottom: gray solid 1.5px;
+	opacity: 1;
+	overflow-y: scroll;
+	transition: 3s;
 }
 
 #about {
@@ -249,21 +273,7 @@ footer h4 {
 	font-family: Comic Sans;
 } 
 
-#react {
-	animation: spin 6s linear infinite; 
-	color: #61DAFB;
-}
 
-/* key frames */
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
 
 
  /*  Media queries  */
@@ -295,7 +305,7 @@ footer h4 {
 	#info-card1 {
 		background: #1F2535;
 	}
-	#info-card1, #info-card2{
+	#info-card1, #info-card2, #info-card3 {
 		opacity: 0;
 		height: 0;
 		border-bottom: none;
